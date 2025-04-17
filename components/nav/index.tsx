@@ -1,6 +1,7 @@
 "use client";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 
 interface NavbarProps {
@@ -32,6 +33,8 @@ const Navbar = ({ links, logo }: NavbarProps) => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  const route = useRouter();
 
   return (
     <div className="bg-[#171717] w-full overflow-hidden">
@@ -108,7 +111,6 @@ const Navbar = ({ links, logo }: NavbarProps) => {
             <a
               href="#register"
               className="px-5 py-2.5 bg-transparent rounded-full border border-[#878787] font-sans text-base font-bold text-white leading-relaxed z-10 w-fit h-fit relative min-w-[130px] min-h-[50px] flex items-center justify-center transition-all duration-300 hover:bg-white hover:text-[#171717]"
-              onClick={() => setIsMenuOpen(false)}
             >
               Register Now
             </a>

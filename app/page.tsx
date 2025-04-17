@@ -8,6 +8,7 @@ import OurSpeakersSection from "@/components/sections/2";
 import AboutSection from "@/components/sections/about";
 import RegisterSection from "@/components/sections/register";
 import Footer from "@/components/footer";
+import AgendaSection from "@/components/sections/agenda";
 
 export default function Home() {
   const speakers: {
@@ -204,6 +205,7 @@ export default function Home() {
       {/* Our Speakers */}
       <OurSpeakersSection speakers={speakers} />
       {/* Agenda */}
+      <AgendaSection />
       {/* About */}
       <AboutSection />
       {/* Register  */}

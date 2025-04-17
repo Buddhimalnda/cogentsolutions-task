@@ -79,7 +79,10 @@ const EventOverview = () => {
   ];
 
   return (
-    <div className="bg-[#171717] text-white w-full py-16 px-4 md:px-8 lg:px-16">
+    <div
+      className="bg-[#171717] text-white w-full py-16 px-4 md:px-8 lg:px-16"
+      id="event-overview"
+    >
       {/* Event Overview Section */}
       <div className="max-w-7xl mx-auto">
         <div ref={overviewRef} className={`mb-12 md:flex space-x-4 `}>
